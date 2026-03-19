@@ -3,12 +3,12 @@ spring:
     name: opc-collector
 
 opc:
-  host: 10.104.40.211
+  host: ip
   domain: ""
   user: Administrator
-  password: "Tlconch@168"
-  prog-id: "pSafetyLink.OPCServer"
-  clsId: "333517BA-2832-43EE-A2EA-8A3FA7D27749"
+  password: "password"
+  prog-id: "PROGID"
+  clsId: "clsId"
   group-name: "spring-opc-group"
   update-rate: 1000
 
@@ -21,7 +21,7 @@ output:
   csv-file: D:/opc-app/output/collect-result.csv
 
 mqtt:
-  broker: tcp://117.68.85.156:1883
-  username: client1
-  password: rC$4HUhHheVTYk4
+  broker: tcp://ip:1883
+  username: username
+  password: password
   dataTopic: /opcServer/sendData
