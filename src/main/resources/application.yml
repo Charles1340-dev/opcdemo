@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: opc-collector
+
+opc:
+  host: 10.104.40.211
+  domain: ""
+  user: Administrator
+  password: "Tlconch@168"
+  prog-id: "pSafetyLink.OPCServer"
+  clsId: "333517BA-2832-43EE-A2EA-8A3FA7D27749"
+  group-name: "spring-opc-group"
+  update-rate: 1000
+
+collector:
+  fixed-delay-ms: 5000
+  files:
+    - D:/opc-app/points/OPC_CONF四线.csv
+
+output:
+  csv-file: D:/opc-app/output/collect-result.csv
+
+mqtt:
+  broker: tcp://117.68.85.156:1883
+  username: client1
+  password: rC$4HUhHheVTYk4
+  dataTopic: /opcServer/sendData
